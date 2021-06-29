@@ -1,0 +1,53 @@
+/*
+    ==============================================
+                ****** RESET *****
+    ==============================================
+*/
+
+/* >>>>>>>>>>>>>>>>>>  Font - Family  >>>>>>>>>>>>>>>>>>*/
+$primary-font: "Cocogoose", sans-serif;
+$secondary-font: "Lato", sans-serif;
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../font-family/Cocogoose.woff2") format("woff2"),
+    url("../font-family/Cocogoose.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* >>>>>>>>>>>>>>>>>>  Colors  >>>>>>>>>>>>>>>>>>>>>>>*/
+$dark-color: #272a31;
+$red-color: #ec5242;
+$light-color: #d3d3d3;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+      ==============================================
+                  ****** GLOBAL ******
+      ==============================================
+*/
+
+@import "about-header";
+@import "about-footer";
+@import "about-section-header";
+@import "about-main-section-info";
