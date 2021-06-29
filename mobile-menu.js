@@ -33,10 +33,19 @@ aboutLink.href = "about.html";
 about.appendChild(aboutLink);
 menuList.appendChild(about);
 
-function mobileMenu() {
+const join = document.createElement("li");
+join.className = "join";
+const joinLink = document.createElement("a");
+joinLink.className = "mobile-link";
+joinLink.textContent = "Join";
+joinLink.href = "#";
+join.appendChild(joinLink);
+menuList.appendChild(join);
+
+document.getElementById("hamburger").addEventListener("click", () => {
   menu.style.display = "block";
   document.getElementById("body").style.filter = "blur(5px)";
-}
+});
 
 icon.addEventListener("click", () => {
   menu.style.display = "none";

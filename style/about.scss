@@ -12,7 +12,8 @@ $secondary-font: "Lato", sans-serif;
 
 @font-face {
   font-family: "Cocogoose";
-  src: url("../font-family/Cocogoose.woff2") format("woff2"),
+  src:
+    url("../font-family/Cocogoose.woff2") format("woff2"),
     url("../font-family/Cocogoose.woff") format("woff");
   font-weight: normal;
   font-style: normal;

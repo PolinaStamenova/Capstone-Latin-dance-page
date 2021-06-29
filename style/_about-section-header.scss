@@ -36,7 +36,12 @@
 
 .section-header-second-title {
   padding-top: 0.5rem;
-  color: $red-color;
+  font-size: 35px;
+  background-image: url(../images/palms.jpeg);
+  background-size: cover;
+  // background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .section-header-text-content {
@@ -78,5 +83,7 @@
 
   .section-header-text-content {
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

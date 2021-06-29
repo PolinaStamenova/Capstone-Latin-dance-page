@@ -351,7 +351,11 @@ footer {
 
 .section-header-second-title {
   padding-top: 0.5rem;
-  color: #ec5242;
+  font-size: 35px;
+  background-image: url(../images/palms.jpeg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .section-header-text-content {
@@ -389,6 +393,8 @@ footer {
   }
   .section-header-text-content {
     width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -421,6 +427,7 @@ main {
 .main-section-info-logo {
   border: 1px solid #d3d3d3;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .main-section-info-logo-image {
@@ -438,8 +445,8 @@ main {
 }
 
 .image-one {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(236, 82, 66, 0.6))), url(../images/salsa-competition-barcelona-one.jpg);
-  background-image: linear-gradient(rgba(236, 82, 66, 0.6)), url(../images/salsa-competition-barcelona-one.jpg);
+  background-image: url(../images/salsa-competition-barcelona-one.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(236, 82, 66, 0.6)));
+  background-image: url(../images/salsa-competition-barcelona-one.jpg), linear-gradient(rgba(236, 82, 66, 0.6));
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3.5rem 2rem;
@@ -458,8 +465,8 @@ main {
 }
 
 .image-two {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(236, 82, 66, 0.6))), url(../images/salsa-competition-barcelona-two.jpg);
-  background-image: linear-gradient(rgba(236, 82, 66, 0.6)), url(../images/salsa-competition-barcelona-two.jpg);
+  background-image: url(../images/salsa-competition-barcelona-two.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(236, 82, 66, 0.6)));
+  background-image: url(../images/salsa-competition-barcelona-two.jpg), linear-gradient(rgba(236, 82, 66, 0.6));
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3.5rem 2rem;
@@ -483,6 +490,11 @@ main {
   .image-one,
   .image-two {
     padding: 6rem 2rem;
+  }
+  .main-section-info-logo {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=about.css.map */

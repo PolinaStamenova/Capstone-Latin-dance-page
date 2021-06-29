@@ -342,7 +342,11 @@ footer {
 
 .section-header-second-title {
   padding-top: 0.5rem;
-  color: #ec5242;
+  font-size: 35px;
+  background-image: url(../images/palms.jpeg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .section-header-text-content {
@@ -505,6 +509,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   padding: 2.2rem 0 3rem 0;
+  height: 20% !important;
 }
 
 .main-section-dancers-title {
