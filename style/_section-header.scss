@@ -1,0 +1,81 @@
+/* -----------------  SECTION-HEADER - START --------------------*/
+.section-header {
+  padding-top: 3rem;
+  position: relative;
+}
+
+.section-header::before {
+  content: "";
+  background-image: url(../images/header-background-image.jpg);
+  opacity: 0.2;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.section-header-content {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: $secondary-font;
+  padding-bottom: 3.5rem;
+}
+
+.section-header-title {
+  padding-top: 3rem;
+  color: $red-color;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.section-header-second-title {
+  padding-top: 0.5rem;
+  color: $red-color;
+}
+
+.section-header-text-content {
+  color: $dark-color;
+  opacity: 0.7;
+  margin-top: 1.7rem;
+  padding: 1rem;
+  background-color: #f1f1f1;
+  border: 2px solid #fff;
+}
+
+.section-header-third-title {
+  color: $dark-color;
+  margin-top: 1.5rem;
+  color: $dark-color;
+  opacity: 0.6;
+}
+
+.section-header-info {
+  color: $dark-color;
+  color: $dark-color;
+  opacity: 0.7;
+  margin-top: 0.5rem;
+}
+/* -----------------  SECTION-HEADER - END --------------------*/
+
+/*
+    ===============================================================
+        ****** SECTION-HEADER - MEDIA QUERY min-width 768px *****
+    ===============================================================
+*/
+
+@media only screen and (min-width: 768px) {
+  .section-header {
+    padding-top: 8rem;
+    position: relative;
+  }
+
+  .section-header-content {
+    width: 80%;
+  }
+
+  .section-header-text-content {
+    width: 50%;
+  }
+}
