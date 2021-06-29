@@ -4,7 +4,7 @@
 
 > Booking event for latin dance.
 
-![screenshot](./images/XXXXXXXXXXXXXXXXXXXXXXX)
+![screenshot](./images/XXXXXXXXXXXXXXXX)
 
 ## Built With
 
