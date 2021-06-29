@@ -1,0 +1,35 @@
+.mobile-menu-style {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba($dark-color, 0.8);
+  z-index: 999;
+
+  i {
+    color: $red-color;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 62px;
+    padding-right: 38px;
+  }
+
+  li {
+    margin-top: 20px;
+    padding-left: 28px;
+  }
+
+  a {
+    color: $light-color;
+    font-family: $primary-font;
+    font-size: 28px;
+  }
+
+  a:hover {
+    color: $red-color;
+  }
+}

@@ -3,7 +3,7 @@
                 ****** RESET *****
     ==============================================
 */
-/* >>>>>>>>>>>>>>>>>>  Font - Family  >>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>  Font - Family  >>>>>>>>>>>>>>>>>> */
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @font-face {
   font-family: "Cocogoose";
@@ -12,7 +12,7 @@
   font-style: normal;
 }
 
-/* >>>>>>>>>>>>>>>>>>  Colors  >>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>  Colors  >>>>>>>>>>>>>>>>>>>>>>> */
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +37,7 @@ a {
                   ****** GLOBAL ******
       ==============================================
 */
-/* -----------------  HEADER - START -----------------*/
+/* -----------------  HEADER - START ----------------- */
 header {
   width: 100%;
   position: fixed;
@@ -57,8 +57,6 @@ header {
 .fa-bars {
   padding: 0.7rem 0;
   color: #272a31;
-  color: #272a31;
-  opacity: 0.6;
 }
 
 .nav-top,
@@ -141,7 +139,7 @@ header {
   color: #ec5242;
 }
 
-/* -----------------  HEADER - END --------------------*/
+/* -----------------  HEADER - END -------------------- */
 /*
     ===============================================================
         ****** HEADER - MEDIA QUERY min-width 768px *****
@@ -157,7 +155,47 @@ header {
   }
 }
 
-/* -----------------  FOOTER - START --------------------*/
+.mobile-menu-style {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(39, 42, 49, 0.8);
+  z-index: 999;
+}
+
+.mobile-menu-style i {
+  color: #ec5242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 62px;
+  padding-right: 38px;
+}
+
+.mobile-menu-style li {
+  margin-top: 20px;
+  padding-left: 28px;
+}
+
+.mobile-menu-style a {
+  color: #d3d3d3;
+  font-family: "Cocogoose", sans-serif;
+  font-size: 28px;
+}
+
+.mobile-menu-style a:hover {
+  color: #ec5242;
+}
+
+/* -----------------  FOOTER - START -------------------- */
 footer {
   display: -ms-grid;
   display: grid;
@@ -247,7 +285,7 @@ footer {
   opacity: 0.5;
 }
 
-/* -----------------  FOOTER - END --------------------*/
+/* -----------------  FOOTER - END -------------------- */
 /*
     ===============================================================
       *** FOOTER - MEDIA QUERY min-width 768px ***
@@ -270,7 +308,7 @@ footer {
   }
 }
 
-/* -----------------  SECTION-HEADER - START --------------------*/
+/* -----------------  SECTION-HEADER - START -------------------- */
 .section-header {
   padding-top: 3rem;
   position: relative;
@@ -281,10 +319,10 @@ footer {
   background-image: url(../images/header-background-image.jpg);
   opacity: 0.2;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .section-header-content {
@@ -319,18 +357,16 @@ footer {
 .section-header-third-title {
   color: #272a31;
   margin-top: 1.5rem;
-  color: #272a31;
   opacity: 0.6;
 }
 
 .section-header-info {
   color: #272a31;
-  color: #272a31;
   opacity: 0.7;
   margin-top: 0.5rem;
 }
 
-/* -----------------  SECTION-HEADER - END --------------------*/
+/* -----------------  SECTION-HEADER - END -------------------- */
 /*
     ===============================================================
         ****** SECTION-HEADER - MEDIA QUERY min-width 768px *****
@@ -473,5 +509,103 @@ main {
 
 .main-section-dancers-title {
   text-align: center;
+}
+
+/* -------- CARDS - dinamicly created at script.js --------- */
+.main-section-dancers-card-image {
+  max-height: 5rem;
+}
+
+.main-section-dancers-cards {
+  margin-top: 2rem;
+}
+
+.main-section-dancers-card {
+  padding: 0.6rem 0 0.6rem 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.black-and-white {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.main-section-dancers-card-content {
+  line-height: 18px;
+}
+
+.main-section-dancers-card-title {
+  color: #272a31;
+  font-size: 14px;
+}
+
+.main-section-dancers-card-description {
+  color: #ec5242;
+  font-size: 11px;
+}
+
+.main-section-dancers-card-text {
+  color: #272a31;
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.main-button-more {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 0.5rem;
+  color: #272a31;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+}
+
+.fa-chevron-down {
+  color: #ec5242;
+}
+
+/*
+    ===============================================================
+        ****** SECTION-HEADER - MEDIA QUERY min-width 768px *****
+    ===============================================================
+*/
+@media only screen and (min-width: 768px) {
+  .main-section-dancers-content {
+    width: 80%;
+  }
+  .main-section-dancers-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .black-and-white {
+    opacity: 0.3;
+  }
+  .main-section-dancers-card-image {
+    max-height: 8rem;
+  }
+  .main-button-more {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

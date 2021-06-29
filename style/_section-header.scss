@@ -1,4 +1,4 @@
-/* -----------------  SECTION-HEADER - START --------------------*/
+/* -----------------  SECTION-HEADER - START -------------------- */
 .section-header {
   padding-top: 3rem;
   position: relative;
@@ -9,10 +9,10 @@
   background-image: url(../images/header-background-image.jpg);
   opacity: 0.2;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .section-header-content {
@@ -47,17 +47,16 @@
 .section-header-third-title {
   color: $dark-color;
   margin-top: 1.5rem;
-  color: $dark-color;
   opacity: 0.6;
 }
 
 .section-header-info {
   color: $dark-color;
-  color: $dark-color;
   opacity: 0.7;
   margin-top: 0.5rem;
 }
-/* -----------------  SECTION-HEADER - END --------------------*/
+
+/* -----------------  SECTION-HEADER - END -------------------- */
 
 /*
     ===============================================================

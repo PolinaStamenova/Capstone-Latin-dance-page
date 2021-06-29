@@ -1,0 +1,116 @@
+.main-section-dancers {
+  background-color: #fff;
+}
+
+.main-section-dancers-content {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.2rem 0 3rem 0;
+}
+
+.main-section-dancers-title {
+  text-align: center;
+}
+
+/* -------- CARDS - dinamicly created at script.js --------- */
+
+.main-section-dancers-card-image {
+  max-height: 5rem;
+}
+
+.main-section-dancers-cards {
+  margin-top: 2rem;
+}
+
+.main-section-dancers-card {
+  padding: 0.6rem 0 0.6rem 0.6rem;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+// .main-section-dancers-card:not(:first-child, :nth-child(2)) {
+//   display: none;
+// }
+
+.black-and-white {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.main-section-dancers-card-content {
+  line-height: 18px;
+}
+
+.main-section-dancers-card-title {
+  color: $dark-color;
+  font-size: 14px;
+}
+
+.main-section-dancers-card-description {
+  color: $red-color;
+  font-size: 11px;
+}
+
+.main-section-dancers-card-text {
+  color: $dark-color;
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.main-button-more {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: $dark-color;
+  font-family: $secondary-font;
+  font-size: 12px;
+}
+
+.fa-chevron-down {
+  color: $red-color;
+}
+
+/*
+    ===============================================================
+        ****** SECTION-HEADER - MEDIA QUERY min-width 768px *****
+    ===============================================================
+*/
+
+@media only screen and (min-width: 768px) {
+  .main-section-dancers-content {
+    width: 80%;
+  }
+
+  .main-section-dancers-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  // .main-section-dancers-card:not(:first-child, :nth-child(2)) {
+  //   display: flex;
+  // }
+
+  .black-and-white {
+    opacity: 0.3;
+  }
+
+  .main-section-dancers-card-image {
+    max-height: 8rem;
+  }
+
+  .main-button-more {
+    display: none;
+  }
+}

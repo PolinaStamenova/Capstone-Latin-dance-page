@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,9 +17,11 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="body">
     <header>
-      <div class="mobile-nav"><i class="fas fa-bars fa-2x"></i></div>
+      <div class="mobile-nav">
+        <i class="fas fa-bars fa-2x" id="hamburger" onclick="mobileMenu()"></i>
+      </div>
       <nav class="nav-top">
         <ul class="nav-top-links">
           <li>
@@ -157,5 +159,6 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="mobile-menu.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
     ==============================================
 */
 
-/* >>>>>>>>>>>>>>>>>>  Font - Family  >>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>  Font - Family  >>>>>>>>>>>>>>>>>> */
 $primary-font: "Cocogoose", sans-serif;
 $secondary-font: "Lato", sans-serif;
 
@@ -18,7 +18,7 @@ $secondary-font: "Lato", sans-serif;
   font-style: normal;
 }
 
-/* >>>>>>>>>>>>>>>>>>  Colors  >>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>  Colors  >>>>>>>>>>>>>>>>>>>>>>> */
 $dark-color: #272a31;
 $red-color: #ec5242;
 $light-color: #d3d3d3;
@@ -48,7 +48,8 @@ a {
 */
 
 @import "header";
+@import "mobile-menu";
 @import "footer";
 @import "section-header";
 @import "section-main-program";
-@import "main-section-speakers";
+@import "main-section-dancers";

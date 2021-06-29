@@ -1,4 +1,4 @@
-/* -----------------  FOOTER - START --------------------*/
+/* -----------------  FOOTER - START -------------------- */
 footer {
   display: grid;
   grid-template-rows: 2fr 1fr;
@@ -16,7 +16,7 @@ footer {
 
 .footer-top-title {
   text-align: center;
-  font-family: #fff;
+  color: #fff;
   font-weight: 500;
   font-size: 20px;
 }
@@ -43,6 +43,7 @@ footer {
   margin-top: 2.5rem;
   opacity: 0.6;
 }
+
 .footer-bottom {
   display: flex;
   color: $dark-color;
@@ -66,7 +67,8 @@ footer {
   font-weight: 600;
   opacity: 0.5;
 }
-/* -----------------  FOOTER - END --------------------*/
+
+/* -----------------  FOOTER - END -------------------- */
 
 /*
     ===============================================================
@@ -82,11 +84,13 @@ footer {
   .footer-top {
     display: none;
   }
+
   .footer-bottom {
     background-color: $dark-color;
     color: $light-color;
     padding: 2rem 0;
   }
+
   .footer-text-content {
     display: block;
   }

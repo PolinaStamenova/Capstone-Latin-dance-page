@@ -3,7 +3,7 @@
                 ****** RESET *****
     ==============================================
 */
-/* >>>>>>>>>>>>>>>>>>  Font - Family  >>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>  Font - Family  >>>>>>>>>>>>>>>>>> */
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 @font-face {
   font-family: "Cocogoose";
@@ -12,7 +12,7 @@
   font-style: normal;
 }
 
-/* >>>>>>>>>>>>>>>>>>  Colors  >>>>>>>>>>>>>>>>>>>>>>>*/
+/* >>>>>>>>>>>>>>>>>>  Colors  >>>>>>>>>>>>>>>>>>>>>>> */
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +37,7 @@ a {
                   ****** GLOBAL ******
       ==============================================
 */
-/* -----------------  HEADER - START -----------------*/
+/* -----------------  HEADER - START ----------------- */
 header {
   width: 100%;
   position: fixed;
@@ -57,8 +57,6 @@ header {
 .fa-bars {
   padding: 0.7rem 0;
   color: #272a31;
-  color: #272a31;
-  opacity: 0.6;
 }
 
 .nav-top,
@@ -141,7 +139,7 @@ header {
   color: #ec5242;
 }
 
-/* -----------------  HEADER - END --------------------*/
+/* -----------------  HEADER - END -------------------- */
 /*
     ===============================================================
         ****** HEADER - MEDIA QUERY min-width 768px *****
@@ -157,7 +155,47 @@ header {
   }
 }
 
-/* -----------------  FOOTER - START --------------------*/
+.mobile-menu-style {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(39, 42, 49, 0.8);
+  z-index: 999;
+}
+
+.mobile-menu-style i {
+  color: #ec5242;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 62px;
+  padding-right: 38px;
+}
+
+.mobile-menu-style li {
+  margin-top: 20px;
+  padding-left: 28px;
+}
+
+.mobile-menu-style a {
+  color: #d3d3d3;
+  font-family: "Cocogoose", sans-serif;
+  font-size: 28px;
+}
+
+.mobile-menu-style a:hover {
+  color: #ec5242;
+}
+
+/* -----------------  FOOTER - START -------------------- */
 footer {
   display: -ms-grid;
   display: grid;
@@ -177,7 +215,7 @@ footer {
 
 .footer-top-title {
   text-align: center;
-  font-family: #fff;
+  color: #fff;
   font-weight: 500;
   font-size: 20px;
 }
@@ -246,7 +284,7 @@ footer {
   opacity: 0.5;
 }
 
-/* -----------------  FOOTER - END --------------------*/
+/* -----------------  FOOTER - END -------------------- */
 /*
     ===============================================================
       *** FOOTER - MEDIA QUERY min-width 768px ***
@@ -275,7 +313,7 @@ footer {
   }
 }
 
-/* -----------------  SECTION-HEADER - START --------------------*/
+/* -----------------  SECTION-HEADER - START ------------------- */
 .section-header {
   padding-top: 3rem;
   position: relative;
@@ -289,10 +327,10 @@ footer {
   background-size: cover;
   opacity: 0.2;
   position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .section-header-content {
@@ -335,7 +373,7 @@ footer {
   border-bottom: 1px dotted #272a31;
 }
 
-/* -----------------  SECTION-HEADER - END --------------------*/
+/* -----------------  SECTION-HEADER - END -------------------- */
 /*
     ===============================================================
         ****** SECTION-HEADER - MEDIA QUERY min-width 768px *****

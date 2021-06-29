@@ -1,5 +1,4 @@
-// ===== Create section, nested in main (index.html ) =====
-
+// Create section, nested in main (index.html )
 const main = document.getElementById("main");
 const featuredDancers = document.createElement("section");
 featuredDancers.className = "main-section-dancers";
@@ -27,9 +26,15 @@ const cardUL = document.createElement("ul");
 cardUL.className = "main-section-dancers-cards";
 featuredDancersDIV.appendChild(cardUL);
 
-// ===== Generate cards in the created section, nested in main (index.html ) =====
-
-function ProjectCard(imageLink, imageAltText, title, descriprion, textContent) {
+// Generate cards in the created section, nested in main (index.html )
+function ProjectCard(
+  imageLink,
+  imageAltText,
+  title,
+  descriprion,
+  textContent,
+  id
+) {
   this.image = {
     link: imageLink,
     altText: imageAltText,
@@ -37,6 +42,7 @@ function ProjectCard(imageLink, imageAltText, title, descriprion, textContent) {
   this.title = title;
   this.descriprion = descriprion;
   this.textContent = textContent;
+  this.id = id;
 }
 
 let dancers = [];
@@ -106,19 +112,21 @@ for (let i = 0; i < dancers.length; i += 1) {
   cardItem.className = "main-section-dancers-card";
   cardUL.appendChild(cardItem);
 
-  const cardDIV = document.createElement("div");
-  cardDIV.className = "main-section-dancers-card-div";
-  cardItem.appendChild(cardDIV);
+  const blackAndWhite = document.createElement("img");
+  blackAndWhite.className = "black-and-white";
+  blackAndWhite.src = "images/black-white-squares.jpg";
+  blackAndWhite.altText = "Background image - black-white-squares";
+  cardItem.appendChild(blackAndWhite);
 
   let cardImg = document.createElement("img");
   cardImg.className = "main-section-dancers-card-image";
   cardImg.src = dancers[i].image.link;
   cardImg.altText = dancers[i].image.altText;
-  cardDIV.appendChild(cardImg);
+  cardItem.appendChild(cardImg);
 
   const cardContent = document.createElement("div");
   cardContent.className = "main-section-dancers-card-content";
-  cardDIV.appendChild(cardContent);
+  cardItem.appendChild(cardContent);
 
   let cardTitle = document.createElement("h3");
   cardTitle.className = "main-section-dancers-card-title";
@@ -135,3 +143,18 @@ for (let i = 0; i < dancers.length; i += 1) {
   cardText.textContent = dancers[i].textContent;
   cardContent.appendChild(cardText);
 }
+
+// Generate cards in the created section, nested in main (index.html )
+const buttonMore = document.createElement("button");
+buttonMore.className = "main-button-more";
+buttonMore.textContent = "MORE";
+featuredDancersDIV.appendChild(buttonMore);
+
+const buttonIcon = document.createElement("i");
+buttonIcon.className = "fas fa-chevron-down";
+buttonMore.appendChild(buttonIcon);
+
+buttonMore.addEventListener("click", () => {
+  buttonIcon.style.backgroundColor = "black";
+});
+console.log(dancers);
