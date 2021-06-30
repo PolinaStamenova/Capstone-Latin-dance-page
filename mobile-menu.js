@@ -14,33 +14,70 @@ menu.appendChild(icon);
 const menuList = document.createElement("ul");
 menuList.className = "menu-list";
 menu.appendChild(menuList);
-
 const home = document.createElement("li");
-home.className = "home";
 const homeLink = document.createElement("a");
-homeLink.className = "mobile-link";
+homeLink.className = "blur-effect";
 homeLink.textContent = "Home";
 homeLink.href = "index.html";
 home.appendChild(homeLink);
 menuList.appendChild(home);
 
 const about = document.createElement("li");
-about.className = "about";
 const aboutLink = document.createElement("a");
-aboutLink.className = "mobile-link";
+aboutLink.className = "blur-effect";
 aboutLink.textContent = "About";
 aboutLink.href = "about.html";
 about.appendChild(aboutLink);
 menuList.appendChild(about);
 
+const program = document.createElement("li");
+const programLink = document.createElement("a");
+programLink.className = "blur-effect";
+programLink.textContent = "Program";
+programLink.href = "#";
+program.appendChild(programLink);
+menuList.appendChild(program);
+
+const sponsor = document.createElement("li");
+const sponsorLink = document.createElement("a");
+sponsorLink.className = "blur-effect";
+sponsorLink.textContent = "Sponsor";
+sponsorLink.href = "#";
+sponsor.appendChild(sponsorLink);
+menuList.appendChild(sponsor);
+
+const news = document.createElement("li");
+const newsLink = document.createElement("a");
+newsLink.className = "blur-effect";
+newsLink.textContent = "News";
+newsLink.href = "#";
+news.appendChild(newsLink);
+menuList.appendChild(news);
+
 const join = document.createElement("li");
-join.className = "join";
 const joinLink = document.createElement("a");
-joinLink.className = "mobile-link";
+joinLink.className = "blur-effect";
 joinLink.textContent = "Join";
 joinLink.href = "#";
 join.appendChild(joinLink);
 menuList.appendChild(join);
+
+const socialMedia = document.createElement("li");
+const socialMediaLink = document.createElement("a");
+socialMediaLink.className = "mobile-menu-social-media";
+socialMediaLink.href = "#";
+socialMedia.appendChild(socialMediaLink);
+menuList.appendChild(socialMedia);
+
+const socialMediaFacebook = document.createElement("i");
+socialMediaFacebook.className = "fab fa-facebook-f";
+socialMediaFacebook.id = "mobileMenuFacebook";
+socialMediaLink.appendChild(socialMediaFacebook);
+
+const socialMediaTwitter = document.createElement("i");
+socialMediaTwitter.className = "fab fa-twitter";
+socialMediaTwitter.id = "mobileMenuTwitter";
+socialMediaLink.appendChild(socialMediaTwitter);
 
 document.getElementById("hamburger").addEventListener("click", () => {
   menu.style.display = "block";

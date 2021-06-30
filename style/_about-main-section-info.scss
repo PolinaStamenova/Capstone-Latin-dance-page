@@ -43,12 +43,21 @@ main {
   gap: 1rem;
 }
 
-.image-one {
-  background-image: url(../images/salsa-competition-barcelona-one.jpg),
-    linear-gradient(rgba($red-color, 0.6));
+.image-one,
+.image-two {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3.5rem 2rem;
+}
+
+.image-one {
+  background-image: linear-gradient(rgba($red-color, 0.6)),
+    url(../images/salsa-competition-barcelona-one.jpg);
+}
+
+.image-two {
+  background-image: linear-gradient(rgba($red-color, 0.6)),
+    url(../images/salsa-competition-barcelona-two.jpg);
 }
 
 .image-title {
@@ -63,13 +72,6 @@ main {
   font-size: 14px;
 }
 
-.image-two {
-  background-image: url(../images/salsa-competition-barcelona-two.jpg),
-    linear-gradient(rgba($red-color, 0.6));
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 3.5rem 2rem;
-}
 // ------------- Article - END ---------------
 
 /*
@@ -80,17 +82,20 @@ main {
 
 @media only screen and (min-width: 768px) {
   .main-section-info {
-    width: 80%;
+    width: 65%;
   }
+
   // ------------- Article ---------------
+
   .images {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+    padding: 1.5rem 0 3rem 0;
   }
 
   .image-one,
   .image-two {
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
   }
 
   .main-section-info-logo {

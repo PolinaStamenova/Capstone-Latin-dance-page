@@ -89,6 +89,15 @@ header {
   color: #d3d3d3;
 }
 
+.nav-top-links-style:hover:not(.fa-twitter:hover .fa-facebook-f:hover) {
+  opacity: 0.5;
+}
+
+.fa-twitter:hover,
+.fa-facebook-f:hover {
+  color: #ec5242;
+}
+
 .logo {
   width: 10rem;
   height: 3rem;
@@ -125,12 +134,54 @@ header {
   color: #d3d3d3;
 }
 
+#aboutPage {
+  padding: 0.7rem;
+  background-color: #ec5242;
+  opacity: 0.6;
+}
+
+#aboutPage:hover {
+  color: #d3d3d3;
+}
+
 .nav-bottom-links-style:active {
   color: #ec5242;
 }
 
 .nav-bottom-links-style:hover {
   color: #ec5242;
+  -webkit-animation: hover 5s;
+          animation: hover 5s;
+}
+
+@-webkit-keyframes hover {
+  from {
+    -webkit-filter: drop-shadow(0 0 0 orange);
+            filter: drop-shadow(0 0 0 orange);
+  }
+  to {
+    -webkit-filter: drop-shadow(-1rem 4rem 4rem orange);
+            filter: drop-shadow(-1rem 4rem 4rem orange);
+  }
+  to {
+    -webkit-filter: drop-shadow(-2rem 5rem 5rem orange);
+            filter: drop-shadow(-2rem 5rem 5rem orange);
+  }
+}
+
+@keyframes hover {
+  from {
+    -webkit-filter: drop-shadow(0 0 0 orange);
+            filter: drop-shadow(0 0 0 orange);
+  }
+  to {
+    -webkit-filter: drop-shadow(-1rem 4rem 4rem orange);
+            filter: drop-shadow(-1rem 4rem 4rem orange);
+  }
+  to {
+    -webkit-filter: drop-shadow(-2rem 5rem 5rem orange);
+            filter: drop-shadow(-2rem 5rem 5rem orange);
+  }
 }
 
 .nav-bottom-links-campaing {
@@ -164,12 +215,69 @@ header {
   width: 100%;
   height: 100%;
   display: none;
-  background-color: rgba(39, 42, 49, 0.8);
+  background-color: #272a31;
   z-index: 999;
+  -webkit-animation: mobileMenu 2s;
+          animation: mobileMenu 2s;
 }
 
-.mobile-menu-style i {
+@-webkit-keyframes mobileMenu {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes mobileMenu {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.mobile-menu-style .mobile-menu-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.mobile-menu-style #mobileMenuFacebook,
+.mobile-menu-style #mobileMenuTwitter {
+  padding-top: 2rem;
+}
+
+.mobile-menu-style #mobileMenuFacebook:hover,
+.mobile-menu-style #mobileMenuTwitter:hover {
+  font-size: 45px;
   color: #ec5242;
+  -webkit-filter: drop-shadow(0.5rem -0.8rem 0.1rem orange);
+          filter: drop-shadow(0.5rem -0.8rem 0.1rem orange);
+}
+
+.mobile-menu-style .blur-effect {
+  -webkit-filter: drop-shadow(0.2rem -0.6rem 0 #ec5242);
+          filter: drop-shadow(0.2rem -0.6rem 0 #ec5242);
+}
+
+.mobile-menu-style .blur-effect:hover {
+  color: #272a31;
+  -webkit-filter: drop-shadow(6.5rem -1.05rem 0 #ec5242);
+          filter: drop-shadow(6.5rem -1.05rem 0 #ec5242);
+}
+
+.mobile-menu-style .fa-times {
+  color: #d3d3d3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,8 +289,8 @@ header {
 }
 
 .mobile-menu-style li {
+  text-align: center;
   margin-top: 20px;
-  padding-left: 28px;
 }
 
 .mobile-menu-style a {
@@ -192,7 +300,30 @@ header {
 }
 
 .mobile-menu-style a:hover {
-  color: #ec5242;
+  -webkit-animation: hoverEffect 0.2s;
+          animation: hoverEffect 0.2s;
+}
+
+@-webkit-keyframes hoverEffect {
+  from {
+    -webkit-filter: drop-shadow(0 0 0 #ec5242);
+            filter: drop-shadow(0 0 0 #ec5242);
+  }
+  to {
+    -webkit-filter: drop-shadow(3rem 3rem 3rem #ec5242);
+            filter: drop-shadow(3rem 3rem 3rem #ec5242);
+  }
+}
+
+@keyframes hoverEffect {
+  from {
+    -webkit-filter: drop-shadow(0 0 0 #ec5242);
+            filter: drop-shadow(0 0 0 #ec5242);
+  }
+  to {
+    -webkit-filter: drop-shadow(3rem 3rem 3rem #ec5242);
+            filter: drop-shadow(3rem 3rem 3rem #ec5242);
+  }
 }
 
 /* -----------------  FOOTER - START -------------------- */
@@ -210,14 +341,15 @@ footer {
   margin-right: auto;
   background-color: #272a31;
   color: #d3d3d3;
-  padding: 2.5rem 0;
+  padding: 2rem 1rem 2.5rem 1rem;
 }
 
 .footer-top-title {
   text-align: center;
-  color: #fff;
-  font-weight: 500;
-  font-size: 20px;
+  color: #d3d3d3;
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 0.8;
 }
 
 .footer-top-underline {
@@ -252,6 +384,7 @@ footer {
   font-size: 24px;
   margin-top: 2.5rem;
   opacity: 0.6;
+  line-height: 12px;
 }
 
 .footer-bottom {
@@ -281,7 +414,7 @@ footer {
 
 .footer-text {
   font-weight: 600;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 /* -----------------  FOOTER - END -------------------- */
@@ -305,6 +438,7 @@ footer {
   }
   .footer-text-content {
     display: block;
+    opacity: 0.8;
   }
   .footer-top-title {
     color: #d3d3d3;
@@ -318,6 +452,7 @@ footer {
   padding-top: 3rem;
   position: relative;
   text-align: center;
+  background-color: #f1f1f1;
 }
 
 .section-header::before {
@@ -352,10 +487,7 @@ footer {
 .section-header-second-title {
   padding-top: 0.5rem;
   font-size: 35px;
-  background-image: url(../images/palms.jpeg);
-  background-size: cover;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: #ec5242;
 }
 
 .section-header-text-content {
@@ -389,12 +521,24 @@ footer {
     position: relative;
   }
   .section-header-content {
-    width: 80%;
+    width: 65%;
+    padding-bottom: 2rem;
+  }
+  .section-header-title {
+    display: none;
+  }
+  .section-header-second-title {
+    padding-top: 3rem;
   }
   .section-header-text-content {
-    width: 50%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+  .section-header-second-content {
+    color: #272a31;
+    opacity: 0.8;
+    padding: 2rem 0 1rem 0;
   }
 }
 
@@ -444,12 +588,21 @@ main {
   gap: 1rem;
 }
 
-.image-one {
-  background-image: url(../images/salsa-competition-barcelona-one.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(236, 82, 66, 0.6)));
-  background-image: url(../images/salsa-competition-barcelona-one.jpg), linear-gradient(rgba(236, 82, 66, 0.6));
+.image-one,
+.image-two {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 3.5rem 2rem;
+}
+
+.image-one {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(236, 82, 66, 0.6))), url(../images/salsa-competition-barcelona-one.jpg);
+  background-image: linear-gradient(rgba(236, 82, 66, 0.6)), url(../images/salsa-competition-barcelona-one.jpg);
+}
+
+.image-two {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(236, 82, 66, 0.6))), url(../images/salsa-competition-barcelona-two.jpg);
+  background-image: linear-gradient(rgba(236, 82, 66, 0.6)), url(../images/salsa-competition-barcelona-two.jpg);
 }
 
 .image-title {
@@ -464,14 +617,6 @@ main {
   font-size: 14px;
 }
 
-.image-two {
-  background-image: url(../images/salsa-competition-barcelona-two.jpg), -webkit-gradient(linear, left top, left bottom, from(rgba(236, 82, 66, 0.6)));
-  background-image: url(../images/salsa-competition-barcelona-two.jpg), linear-gradient(rgba(236, 82, 66, 0.6));
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 3.5rem 2rem;
-}
-
 /*
     ===============================================================
       *** Main - MEDIA QUERY min-width 768px ***
@@ -479,17 +624,18 @@ main {
 */
 @media only screen and (min-width: 768px) {
   .main-section-info {
-    width: 80%;
+    width: 65%;
   }
   .images {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    padding: 1.5rem 0 3rem 0;
   }
   .image-one,
   .image-two {
-    padding: 6rem 2rem;
+    padding: 4rem 2rem;
   }
   .main-section-info-logo {
     width: 50%;

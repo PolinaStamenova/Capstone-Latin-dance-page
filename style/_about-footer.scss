@@ -11,14 +11,15 @@ footer {
   margin-right: auto;
   background-color: $dark-color;
   color: $light-color;
-  padding: 2.5rem 0;
+  padding: 2rem 1rem 2.5rem 1rem;
 }
 
 .footer-top-title {
   text-align: center;
-  color: #fff;
-  font-weight: 500;
-  font-size: 20px;
+  color: $light-color;
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 0.8;
 }
 
 .footer-top-underline {
@@ -42,6 +43,7 @@ footer {
   font-size: 24px;
   margin-top: 2.5rem;
   opacity: 0.6;
+  line-height: 12px;
 }
 
 .footer-bottom {
@@ -65,7 +67,7 @@ footer {
 
 .footer-text {
   font-weight: 600;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 /* -----------------  FOOTER - END -------------------- */
@@ -93,6 +95,7 @@ footer {
 
   .footer-text-content {
     display: block;
+    opacity: 0.8;
   }
 
   .footer-top-title {

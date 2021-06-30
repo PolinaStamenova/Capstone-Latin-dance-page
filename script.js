@@ -2,6 +2,7 @@
 const main = document.getElementById("main");
 const featuredDancers = document.createElement("section");
 featuredDancers.className = "main-section-dancers";
+featuredDancers.id = "featureDancer";
 main.appendChild(featuredDancers);
 
 const featuredDancersDIV = document.createElement("div");
@@ -24,6 +25,7 @@ featuredDancersTitleUnderline.appendChild(featuredDancersTitleUnderlineSp);
 
 const cardUL = document.createElement("ul");
 cardUL.className = "main-section-dancers-cards";
+cardUL.id = "cards-show";
 featuredDancersDIV.appendChild(cardUL);
 
 // Generate cards in the created section, nested in main (index.html )
@@ -143,6 +145,46 @@ for (let i = 0; i < dancers.length; i += 1) {
   cardText.textContent = dancers[i].textContent;
   cardContent.appendChild(cardText);
 }
+
+window.addEventListener("load", checkWindowWidth);
+window.addEventListener("resize", checkWindowWidth);
+
+function checkWindowWidth() {
+  if (screen.width < 768) {
+    // alert("mobile");
+    document.getElementsByClassName(
+      "main-section-dancers-card"
+    )[2].style.display = "none";
+    document.getElementsByClassName(
+      "main-section-dancers-card"
+    )[3].style.display = "none";
+    document.getElementsByClassName(
+      "main-section-dancers-card"
+    )[4].style.display = "none";
+    document.getElementsByClassName(
+      "main-section-dancers-card"
+    )[5].style.display = "none";
+  } else {
+    document.getElementsByClassName(
+      "main-section-dancers-card"
+    )[2].style.display = "flex";
+
+    document.getElementsByClassName(
+      "main-section-dancers-card"
+    )[3].style.display = "flex";
+
+    document.getElementsByClassName(
+      "main-section-dancers-card"
+    )[4].style.display = "flex";
+
+    document.getElementsByClassName(
+      "main-section-dancers-card"
+    )[5].style.display = "flex";
+    // alert("desktop");
+  }
+}
+
+console.log(document.getElementsByClassName("main-section-dancers-card")[1]);
 
 // Generate cards in the created section, nested in main (index.html )
 const buttonMore = document.createElement("button");

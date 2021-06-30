@@ -64,9 +64,7 @@ main {
 
 .main-program-link {
   padding: 3rem 0;
-  // display: flex;
-  // align-items: center;
-  color: #fff;
+  color: $light-color;
   text-decoration: underline;
   font-size: 12px;
   display: none;

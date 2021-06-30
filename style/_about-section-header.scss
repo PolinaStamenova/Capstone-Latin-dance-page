@@ -3,6 +3,7 @@
   padding-top: 3rem;
   position: relative;
   text-align: center;
+  background-color: #f1f1f1;
 }
 
 .section-header::before {
@@ -37,11 +38,7 @@
 .section-header-second-title {
   padding-top: 0.5rem;
   font-size: 35px;
-  background-image: url(../images/palms.jpeg);
-  background-size: cover;
-  // background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  color: $red-color;
 }
 
 .section-header-text-content {
@@ -78,12 +75,27 @@
   }
 
   .section-header-content {
-    width: 80%;
+    width: 65%;
+    padding-bottom: 2rem;
+  }
+
+  .section-header-title {
+    display: none;
+  }
+
+  .section-header-second-title {
+    padding-top: 3rem;
   }
 
   .section-header-text-content {
-    width: 50%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .section-header-second-content {
+    color: $dark-color;
+    opacity: 0.8;
+    padding: 2rem 0 1rem 0;
   }
 }

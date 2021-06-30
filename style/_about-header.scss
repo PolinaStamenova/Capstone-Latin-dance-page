@@ -44,6 +44,15 @@ header {
   color: $light-color;
 }
 
+.nav-top-links-style:hover:not(.fa-twitter:hover .fa-facebook-f:hover) {
+  opacity: 0.5;
+}
+
+.fa-twitter:hover,
+.fa-facebook-f:hover {
+  color: $red-color;
+}
+
 .logo {
   width: 10rem;
   height: 3rem;
@@ -72,12 +81,37 @@ header {
   color: $light-color;
 }
 
+#aboutPage {
+  padding: 0.7rem;
+  background-color: $red-color;
+  opacity: 0.6;
+}
+
+#aboutPage:hover {
+  color: $light-color;
+}
+
 .nav-bottom-links-style:active {
   color: $red-color;
 }
 
 .nav-bottom-links-style:hover {
   color: $red-color;
+  animation: hover 5s;
+}
+
+@keyframes hover {
+  from {
+    filter: drop-shadow(0 0 0 orange);
+  }
+
+  to {
+    filter: drop-shadow(-1rem 4rem 4rem orange);
+  }
+
+  to {
+    filter: drop-shadow(-2rem 5rem 5rem orange);
+  }
 }
 
 .nav-bottom-links-campaing {

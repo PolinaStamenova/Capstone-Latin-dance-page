@@ -89,6 +89,15 @@ header {
   color: #d3d3d3;
 }
 
+.nav-top-links-style:hover:not(.fa-twitter:hover .fa-facebook-f:hover) {
+  opacity: 0.5;
+}
+
+.fa-twitter:hover,
+.fa-facebook-f:hover {
+  color: #ec5242;
+}
+
 .logo {
   width: 10rem;
   height: 3rem;
@@ -131,6 +140,38 @@ header {
 
 .nav-bottom-links-style:hover {
   color: #ec5242;
+  -webkit-animation: hover 5s;
+          animation: hover 5s;
+}
+
+@-webkit-keyframes hover {
+  from {
+    -webkit-filter: drop-shadow(0 0 0 orange);
+            filter: drop-shadow(0 0 0 orange);
+  }
+  to {
+    -webkit-filter: drop-shadow(-1rem 4rem 4rem orange);
+            filter: drop-shadow(-1rem 4rem 4rem orange);
+  }
+  to {
+    -webkit-filter: drop-shadow(-2rem 5rem 5rem orange);
+            filter: drop-shadow(-2rem 5rem 5rem orange);
+  }
+}
+
+@keyframes hover {
+  from {
+    -webkit-filter: drop-shadow(0 0 0 orange);
+            filter: drop-shadow(0 0 0 orange);
+  }
+  to {
+    -webkit-filter: drop-shadow(-1rem 4rem 4rem orange);
+            filter: drop-shadow(-1rem 4rem 4rem orange);
+  }
+  to {
+    -webkit-filter: drop-shadow(-2rem 5rem 5rem orange);
+            filter: drop-shadow(-2rem 5rem 5rem orange);
+  }
 }
 
 .nav-bottom-links-campaing {
@@ -164,12 +205,69 @@ header {
   width: 100%;
   height: 100%;
   display: none;
-  background-color: rgba(39, 42, 49, 0.8);
+  background-color: #272a31;
   z-index: 999;
+  -webkit-animation: mobileMenu 2s;
+          animation: mobileMenu 2s;
 }
 
-.mobile-menu-style i {
+@-webkit-keyframes mobileMenu {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes mobileMenu {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+.mobile-menu-style .mobile-menu-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.mobile-menu-style #mobileMenuFacebook,
+.mobile-menu-style #mobileMenuTwitter {
+  padding-top: 2rem;
+}
+
+.mobile-menu-style #mobileMenuFacebook:hover,
+.mobile-menu-style #mobileMenuTwitter:hover {
+  font-size: 45px;
   color: #ec5242;
+  -webkit-filter: drop-shadow(0.5rem -0.8rem 0.1rem orange);
+          filter: drop-shadow(0.5rem -0.8rem 0.1rem orange);
+}
+
+.mobile-menu-style .blur-effect {
+  -webkit-filter: drop-shadow(0.2rem -0.6rem 0 #ec5242);
+          filter: drop-shadow(0.2rem -0.6rem 0 #ec5242);
+}
+
+.mobile-menu-style .blur-effect:hover {
+  color: #272a31;
+  -webkit-filter: drop-shadow(6.5rem -1.05rem 0 #ec5242);
+          filter: drop-shadow(6.5rem -1.05rem 0 #ec5242);
+}
+
+.mobile-menu-style .fa-times {
+  color: #d3d3d3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,8 +279,8 @@ header {
 }
 
 .mobile-menu-style li {
+  text-align: center;
   margin-top: 20px;
-  padding-left: 28px;
 }
 
 .mobile-menu-style a {
@@ -192,7 +290,30 @@ header {
 }
 
 .mobile-menu-style a:hover {
-  color: #ec5242;
+  -webkit-animation: hoverEffect 0.2s;
+          animation: hoverEffect 0.2s;
+}
+
+@-webkit-keyframes hoverEffect {
+  from {
+    -webkit-filter: drop-shadow(0 0 0 #ec5242);
+            filter: drop-shadow(0 0 0 #ec5242);
+  }
+  to {
+    -webkit-filter: drop-shadow(3rem 3rem 3rem #ec5242);
+            filter: drop-shadow(3rem 3rem 3rem #ec5242);
+  }
+}
+
+@keyframes hoverEffect {
+  from {
+    -webkit-filter: drop-shadow(0 0 0 #ec5242);
+            filter: drop-shadow(0 0 0 #ec5242);
+  }
+  to {
+    -webkit-filter: drop-shadow(3rem 3rem 3rem #ec5242);
+            filter: drop-shadow(3rem 3rem 3rem #ec5242);
+  }
 }
 
 /* -----------------  FOOTER - START -------------------- */
@@ -210,14 +331,16 @@ footer {
   margin-right: auto;
   background-color: #272a31;
   color: #d3d3d3;
-  padding: 2.5rem 0;
+  padding: 2rem 1rem 2.5rem 1rem;
 }
 
 .footer-top-title {
   text-align: center;
-  color: #fff;
-  font-weight: 500;
+  color: #d3d3d3;
+  font-weight: bold;
   font-size: 20px;
+  font-size: 18px;
+  opacity: 0.8;
 }
 
 .footer-top-underline {
@@ -252,6 +375,7 @@ footer {
   font-size: 24px;
   margin-top: 2.5rem;
   opacity: 0.6;
+  line-height: 12px;
 }
 
 .footer-bottom {
@@ -345,6 +469,7 @@ footer {
   font-size: 35px;
   background-image: url(../images/palms.jpeg);
   background-size: cover;
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -460,7 +585,7 @@ main {
 
 .main-program-link {
   padding: 3rem 0;
-  color: #fff;
+  color: #d3d3d3;
   text-decoration: underline;
   font-size: 12px;
   display: none;
@@ -509,7 +634,6 @@ main {
   margin-left: auto;
   margin-right: auto;
   padding: 2.2rem 0 3rem 0;
-  height: 20% !important;
 }
 
 .main-section-dancers-title {
