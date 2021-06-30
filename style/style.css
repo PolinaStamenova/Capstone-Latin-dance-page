@@ -286,8 +286,8 @@ header {
 
 .mobile-menu-style .blur-effect:hover {
   color: #272a31;
-  -webkit-filter: drop-shadow(6.5rem -1.05rem 0 #ec5242);
-          filter: drop-shadow(6.5rem -1.05rem 0 #ec5242);
+  -webkit-filter: drop-shadow(5rem -1.05rem 0 #ec5242);
+          filter: drop-shadow(5rem -1.05rem 0 #ec5242);
 }
 
 .mobile-menu-style .fa-times {
