@@ -22,7 +22,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Video Demo
 
-[Video Link](XXXXXXXXXXXXXXXX)
+[Video Link](https://www.loom.com/share/02274ccc2f1443a092f631e37c581554)
 
 ## Instructions
 
