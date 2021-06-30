@@ -7,6 +7,8 @@
 .section-header::before {
   content: "";
   background-image: url(../images/header-background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   opacity: 0.2;
   position: absolute;
   top: 0;
