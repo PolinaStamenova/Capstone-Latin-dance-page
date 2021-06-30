@@ -51,12 +51,14 @@ main {
 }
 
 .image-one {
-  background-image: linear-gradient(rgba($red-color, 0.6)),
+  background-image:
+    linear-gradient(rgba($red-color, 0.6)),
     url(../images/salsa-competition-barcelona-one.jpg);
 }
 
 .image-two {
-  background-image: linear-gradient(rgba($red-color, 0.6)),
+  background-image:
+    linear-gradient(rgba($red-color, 0.6)),
     url(../images/salsa-competition-barcelona-two.jpg);
 }
 

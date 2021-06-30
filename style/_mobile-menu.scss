@@ -9,7 +9,7 @@
   display: none;
   background-color: $dark-color;
   z-index: 999;
-  animation: mobileMenu 2s;
+  animation: mobileMenu 400ms;
 
   @keyframes mobileMenu {
     from {
@@ -18,6 +18,21 @@
 
     to {
       height: 100%;
+    }
+  }
+
+  #mobileMenuLinks {
+    visibility: hidden;
+    animation: mobileMenuLinks 400s 400ms;
+  }
+
+  @keyframes mobileMenuLinks {
+    0% {
+      visibility: hidden;
+    }
+
+    100% {
+      visibility: visible;
     }
   }
 
@@ -55,6 +70,16 @@
     justify-content: flex-end;
     padding-top: 62px;
     padding-right: 38px;
+  }
+
+  @keyframes closeSlow {
+    from {
+      height: 100%;
+    }
+
+    to {
+      height: 0%;
+    }
   }
 
   li {

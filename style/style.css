@@ -207,8 +207,8 @@ header {
   display: none;
   background-color: #272a31;
   z-index: 999;
-  -webkit-animation: mobileMenu 2s;
-          animation: mobileMenu 2s;
+  -webkit-animation: mobileMenu 400ms;
+          animation: mobileMenu 400ms;
 }
 
 @-webkit-keyframes mobileMenu {
@@ -226,6 +226,30 @@ header {
   }
   to {
     height: 100%;
+  }
+}
+
+.mobile-menu-style #mobileMenuLinks {
+  visibility: hidden;
+  -webkit-animation: mobileMenuLinks 400s 400ms;
+          animation: mobileMenuLinks 400s 400ms;
+}
+
+@-webkit-keyframes mobileMenuLinks {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes mobileMenuLinks {
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
   }
 }
 
@@ -276,6 +300,24 @@ header {
           justify-content: flex-end;
   padding-top: 62px;
   padding-right: 38px;
+}
+
+@-webkit-keyframes closeSlow {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0%;
+  }
+}
+
+@keyframes closeSlow {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0%;
+  }
 }
 
 .mobile-menu-style li {
@@ -469,7 +511,7 @@ footer {
   font-size: 35px;
   background-image: url(../images/palms.jpeg);
   background-size: cover;
-  background-clip: text;
+  background-clip: content-box;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -657,6 +699,8 @@ main {
   gap: 1rem;
   position: relative;
   z-index: 1;
+  -webkit-transition: all 10s;
+  transition: all 10s;
 }
 
 .black-and-white {
@@ -707,7 +751,8 @@ main {
   font-size: 12px;
 }
 
-.fa-chevron-down {
+.fa-chevron-down,
+.fa-chevron-up {
   color: #ec5242;
 }
 

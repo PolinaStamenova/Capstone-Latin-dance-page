@@ -1,31 +1,31 @@
 // Create section, nested in main (index.html )
-const main = document.getElementById("main");
-const featuredDancers = document.createElement("section");
-featuredDancers.className = "main-section-dancers";
-featuredDancers.id = "featureDancer";
+const main = document.getElementById('main');
+const featuredDancers = document.createElement('section');
+featuredDancers.className = 'main-section-dancers';
+featuredDancers.id = 'featureDancer';
 main.appendChild(featuredDancers);
 
-const featuredDancersDIV = document.createElement("div");
-featuredDancersDIV.className = "main-section-dancers-content";
+const featuredDancersDIV = document.createElement('div');
+featuredDancersDIV.className = 'main-section-dancers-content';
 featuredDancers.appendChild(featuredDancersDIV);
 
-const featuredDancersTitle = document.createElement("h3");
-featuredDancersTitle.className = "main-section-dancers-title";
-featuredDancersTitle.textContent = "Featured Dancers";
+const featuredDancersTitle = document.createElement('h3');
+featuredDancersTitle.className = 'main-section-dancers-title';
+featuredDancersTitle.textContent = 'Featured Dancers';
 featuredDancersDIV.appendChild(featuredDancersTitle);
 
-const featuredDancersTitleUnderline = document.createElement("p");
-featuredDancersTitleUnderline.className = "footer-top-underline";
+const featuredDancersTitleUnderline = document.createElement('p');
+featuredDancersTitleUnderline.className = 'footer-top-underline';
 featuredDancersDIV.appendChild(featuredDancersTitleUnderline);
 
-const featuredDancersTitleUnderlineSp = document.createElement("span");
-featuredDancersTitleUnderlineSp.className = "footer-top-underline-span";
-featuredDancersTitleUnderlineSp.className = "footer-top-underline-span";
+const featuredDancersTitleUnderlineSp = document.createElement('span');
+featuredDancersTitleUnderlineSp.className = 'footer-top-underline-span';
+featuredDancersTitleUnderlineSp.className = 'footer-top-underline-span';
 featuredDancersTitleUnderline.appendChild(featuredDancersTitleUnderlineSp);
 
-const cardUL = document.createElement("ul");
-cardUL.className = "main-section-dancers-cards";
-cardUL.id = "cards-show";
+const cardUL = document.createElement('ul');
+cardUL.className = 'main-section-dancers-cards';
+cardUL.id = 'cards-show';
 featuredDancersDIV.appendChild(cardUL);
 
 // Generate cards in the created section, nested in main (index.html )
@@ -35,7 +35,7 @@ function ProjectCard(
   title,
   descriprion,
   textContent,
-  id
+  id,
 ) {
   this.image = {
     link: imageLink,
@@ -51,151 +51,156 @@ const dancers = [];
 
 dancers.push(
   new ProjectCard(
-    "images/dancer-Clara.jpg",
-    "Picture of Dancer",
-    "Clara Rossa",
+    'images/dancer-Clara.jpg',
+    'Picture of Dancer',
+    'Clara Rossa',
     "Salsa teacher and owner of 'Dance Studio - Havana Barcelona'",
-    "In 2001 won a first place in World Latin Compettitioon for young dancers and have got the chance to travel around the world."
-  )
+    'In 2001 won a first place in World Latin Compettitioon for young dancers and have got the chance to travel around the world.',
+  ),
 );
 
 dancers.push(
   new ProjectCard(
-    "images/dancer-Clara.jpg",
-    "Picture of Dancer",
-    "Clara Rossa",
+    'images/dancer-Clara.jpg',
+    'Picture of Dancer',
+    'Clara Rossa',
     "Salsa teacher and owner of 'Dance Studio - Havana Barcelona'",
-    "In 2001 won a first place in World Latin Compettitioon for young dancers and have got the chance to travel around the world."
-  )
+    'In 2001 won a first place in World Latin Compettitioon for young dancers and have got the chance to travel around the world.',
+  ),
 );
 
 dancers.push(
   new ProjectCard(
-    "images/dancer-Clara.jpg",
-    "Picture of Dancer",
-    "Clara Rossa",
+    'images/dancer-Clara.jpg',
+    'Picture of Dancer',
+    'Clara Rossa',
     "Salsa teacher and owner of 'Dance Studio - Havana Barcelona'",
-    "In 2001 won a first place in World Latin Compettitioon for young dancers and have got the chance to travel around the world."
-  )
+    'In 2001 won a first place in World Latin Compettitioon for young dancers and have got the chance to travel around the world.',
+  ),
 );
 
 dancers.push(
   new ProjectCard(
-    "images/dancer-Clara.jpg",
-    "Picture of Dancer",
-    "Clara Rossa",
+    'images/dancer-Clara.jpg',
+    'Picture of Dancer',
+    'Clara Rossa',
     "Salsa teacher and owner of 'Dance Studio - Havana Barcelona'",
-    "In 2001 won a first place in World Latin Compettitioon for young dancers and have got the chance to travel around the world."
-  )
+    'In 2001 won a first place in World Latin Compettitioon for young dancers and have got the chance to travel around the world.',
+  ),
 );
 
 dancers.push(
   new ProjectCard(
-    "images/dancer-Clara.jpg",
-    "Picture of Dancer",
-    "Clara Rossa",
+    'images/dancer-Clara.jpg',
+    'Picture of Dancer',
+    'Clara Rossa',
     "Salsa teacher and owner of 'Dance Studio - Havana Barcelona'",
-    "In 2001 won a first place in World Latin Compettitioon for young dancers and have got the chance to travel around the world."
-  )
+    'In 2001 won a first place in World Latin Compettitioon for young dancers and have got the chance to travel around the world.',
+  ),
 );
 
 dancers.push(
   new ProjectCard(
-    "images/dancer-Clara.jpg",
-    "Picture of Dancer",
-    "Clara Rossa",
+    'images/dancer-Clara.jpg',
+    'Picture of Dancer',
+    'Clara Rossa',
     "Salsa teacher and owner of 'Dance Studio - Havana Barcelona'",
-    "In 2001 won a first place in World Latin Compettitioon for young dancers and have got the chance to travel around the world."
-  )
+    'In 2001 won a first place in World Latin Compettitioon for young dancers and have got the chance to travel around the world.',
+  ),
 );
 
 for (let i = 0; i < dancers.length; i += 1) {
-  const cardItem = document.createElement("li");
-  cardItem.className = "main-section-dancers-card";
+  const cardItem = document.createElement('li');
+  cardItem.className = 'main-section-dancers-card';
   cardUL.appendChild(cardItem);
 
-  const blackAndWhite = document.createElement("img");
-  blackAndWhite.className = "black-and-white";
-  blackAndWhite.src = "images/black-white-squares.jpg";
-  blackAndWhite.altText = "Background image - black-white-squares";
+  const blackAndWhite = document.createElement('img');
+  blackAndWhite.className = 'black-and-white';
+  blackAndWhite.src = 'images/black-white-squares.jpg';
+  blackAndWhite.altText = 'Background image - black-white-squares';
   cardItem.appendChild(blackAndWhite);
 
-  const cardImg = document.createElement("img");
-  cardImg.className = "main-section-dancers-card-image";
+  const cardImg = document.createElement('img');
+  cardImg.className = 'main-section-dancers-card-image';
   cardImg.src = dancers[i].image.link;
   cardImg.altText = dancers[i].image.altText;
   cardItem.appendChild(cardImg);
 
-  const cardContent = document.createElement("div");
-  cardContent.className = "main-section-dancers-card-content";
+  const cardContent = document.createElement('div');
+  cardContent.className = 'main-section-dancers-card-content';
   cardItem.appendChild(cardContent);
 
-  const cardTitle = document.createElement("h3");
-  cardTitle.className = "main-section-dancers-card-title";
+  const cardTitle = document.createElement('h3');
+  cardTitle.className = 'main-section-dancers-card-title';
   cardTitle.textContent = dancers[i].title;
   cardContent.appendChild(cardTitle);
 
-  const cardDecription = document.createElement("p");
-  cardDecription.className = "main-section-dancers-card-description";
+  const cardDecription = document.createElement('p');
+  cardDecription.className = 'main-section-dancers-card-description';
   cardDecription.textContent = dancers[i].descriprion;
   cardContent.appendChild(cardDecription);
 
-  const cardText = document.createElement("p");
-  cardText.className = "main-section-dancers-card-text";
+  const cardText = document.createElement('p');
+  cardText.className = 'main-section-dancers-card-text';
   cardText.textContent = dancers[i].textContent;
   cardContent.appendChild(cardText);
 }
 
-window.addEventListener("load", checkWindowWidth);
-window.addEventListener("resize", checkWindowWidth);
+// Function for displaying cards in section,
+// nested in main (index.html ) dippends on the screen width
 
 function checkWindowWidth() {
-  if (screen.width < 768) {
-    // alert("mobile");
-    document.getElementsByClassName(
-      "main-section-dancers-card"
-    )[2].style.display = "none";
-    document.getElementsByClassName(
-      "main-section-dancers-card"
-    )[3].style.display = "none";
-    document.getElementsByClassName(
-      "main-section-dancers-card"
-    )[4].style.display = "none";
-    document.getElementsByClassName(
-      "main-section-dancers-card"
-    )[5].style.display = "none";
-  } else {
-    document.getElementsByClassName(
-      "main-section-dancers-card"
-    )[2].style.display = "flex";
-
-    document.getElementsByClassName(
-      "main-section-dancers-card"
-    )[3].style.display = "flex";
-
-    document.getElementsByClassName(
-      "main-section-dancers-card"
-    )[4].style.display = "flex";
-
-    document.getElementsByClassName(
-      "main-section-dancers-card"
-    )[5].style.display = "flex";
-    // alert("desktop");
+  for (let j = 0; j < 6; j += 1) {
+    if (window.screen.width < 768 && j > 1) {
+      document.getElementsByClassName('main-section-dancers-card')[
+        j
+      ].style.display = 'none';
+    } else {
+      document.getElementsByClassName('main-section-dancers-card')[
+        j
+      ].style.display = 'flex';
+    }
   }
 }
 
-console.log(document.getElementsByClassName("main-section-dancers-card")[1]);
+window.addEventListener('load', checkWindowWidth);
+window.addEventListener('resize', checkWindowWidth);
 
-// Generate cards in the created section, nested in main (index.html )
-const buttonMore = document.createElement("button");
-buttonMore.className = "main-button-more";
-buttonMore.textContent = "MORE";
+// Add event on click to the button the section, nested in main (index.html ) - MORE btn
+const buttonMore = document.createElement('button');
+buttonMore.className = 'main-button-more';
+buttonMore.textContent = 'MORE';
 featuredDancersDIV.appendChild(buttonMore);
 
-const buttonIcon = document.createElement("i");
-buttonIcon.className = "fas fa-chevron-down";
+const buttonIcon = document.createElement('i');
+buttonIcon.className = 'fas fa-chevron-down';
 buttonMore.appendChild(buttonIcon);
 
-buttonMore.addEventListener("click", () => {
-  buttonIcon.style.backgroundColor = "black";
+let buttonStatus = false;
+
+buttonMore.addEventListener('click', () => {
+  if (buttonStatus === false) {
+    for (let j = 0; j < 6; j += 1) {
+      document.getElementsByClassName('main-section-dancers-card')[
+        j
+      ].style.display = 'flex';
+    }
+
+    buttonStatus = true;
+    buttonMore.textContent = 'LESS';
+    const buttonIcon = document.createElement('i');
+    buttonIcon.className = 'fas fa-chevron-up';
+    buttonMore.appendChild(buttonIcon);
+  } else {
+    for (let j = 2; j < 6; j += 1) {
+      document.getElementsByClassName('main-section-dancers-card')[
+        j
+      ].style.display = 'none';
+    }
+    buttonStatus = false;
+    buttonMore.textContent = 'MORE';
+    const buttonIcon = document.createElement('i');
+    buttonIcon.className = 'fas fa-chevron-down';
+    buttonMore.appendChild(buttonIcon);
+  }
 });
