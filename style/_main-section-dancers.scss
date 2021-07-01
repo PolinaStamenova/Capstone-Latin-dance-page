@@ -32,10 +32,6 @@
   transition: all 10s;
 }
 
-// .main-section-dancers-card:not(:first-child, :nth-child(2)) {
-//   display: none;
-// }
-
 .black-and-white {
   width: 40px;
   height: 40px;
@@ -99,10 +95,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
-
-  // .main-section-dancers-card:not(:first-child, :nth-child(2)) {
-  //   display: flex;
-  // }
 
   .black-and-white {
     opacity: 0.3;

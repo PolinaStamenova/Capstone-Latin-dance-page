@@ -3,7 +3,7 @@
   padding-top: 3rem;
   position: relative;
   text-align: center;
-  background-color: #f1f1f1;
+  height: auto;
 }
 
 .section-header::before {
@@ -17,6 +17,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: -5;
 }
 
 .section-header-content {
@@ -24,7 +25,7 @@
   margin-left: auto;
   margin-right: auto;
   font-family: $secondary-font;
-  padding-bottom: 1rem;
+  padding-bottom: 4rem;
 }
 
 .section-header-title {
@@ -37,8 +38,19 @@
 
 .section-header-second-title {
   padding-top: 0.5rem;
-  font-size: 35px;
-  color: $red-color;
+  background-image: url(../images/orange-red-background.jpg);
+  background-size: cover;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.85rem;
+  font-family: $primary-font;
+}
+
+.section-header-second-title-year {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 900;
 }
 
 .section-header-text-content {
@@ -54,6 +66,7 @@
   color: $dark-color;
   opacity: 0.8;
   padding: 1rem 0;
+  font-size: 1.2rem;
 }
 
 .section-header-strong-text {
@@ -70,8 +83,9 @@
 
 @media only screen and (min-width: 768px) {
   .section-header {
-    padding-top: 7rem;
+    padding-top: 9rem;
     position: relative;
+    height: 100vh;
   }
 
   .section-header-content {
@@ -84,7 +98,12 @@
   }
 
   .section-header-second-title {
-    padding-top: 3rem;
+    padding-top: 3.5rem;
+    font-size: 3.5rem;
+  }
+
+  .section-header-second-title-year {
+    font-size: 4.5rem;
   }
 
   .section-header-text-content {
@@ -95,7 +114,8 @@
 
   .section-header-second-content {
     color: $dark-color;
-    opacity: 0.8;
-    padding: 2rem 0 1rem 0;
+    opacity: 0.9;
+    font-size: 1.25rem;
+    padding: 5rem 0 1rem 0;
   }
 }

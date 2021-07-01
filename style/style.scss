@@ -19,6 +19,12 @@ $secondary-font: "Lato", sans-serif;
   font-style: normal;
 }
 
+@font-face {
+  /* Cocogoose Light */
+  font-family: "cocogoose-light";
+  src: url("../utils/fonts/cocogoose/Cocogoose-light.ttf");
+}
+
 /* >>>>>>>>>>>>>>>>>>  Colors  >>>>>>>>>>>>>>>>>>>>>>> */
 $dark-color: #272a31;
 $red-color: #ec5242;
@@ -40,6 +46,20 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.display-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*
