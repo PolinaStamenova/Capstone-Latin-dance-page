@@ -2,9 +2,9 @@
 
 # Latin dance page
 
-> Booking event for latin dance.
+> Webpage for salsa congress.
 
-![screenshot](./images/XXXXXXXXXXXXXXXX)
+![screenshot](./images/demo-picture.JPG)
 
 ## Built With
 
@@ -18,7 +18,11 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 
-[Live Link](XXXXXXXXXXXXXXXXXXXXXXX)
+[Live Link](https://polinastamenova.github.io/Capstone-Latin-dance-page/)
+
+## Video Demo
+
+[Video Link](https://www.loom.com/share/02274ccc2f1443a092f631e37c581554)
 
 ## Instructions
 
